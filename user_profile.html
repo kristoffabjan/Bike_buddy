@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+	<title>
+		Bike buddy
+	</title>
+	<!--     Fonts and icons     -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!-- Nucleo Icons -->
+	<link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<!-- CSS Files -->
+	<link href="./assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="./assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg fixed-bottom pt-0 pb-0 text-center">
+
+		<hr class="line-primary w-100 mt-0 mb-0">
+		<div class="container-fluid text-center" style = "display:block !important;">
+			<div class="row">
+				<div class="col"><a href="index.html"><i class="bi bi-house fa-2x text-dark"></i></a></div>
+				<div class="col"><a href="social.html"><i class="bi bi-people fa-2x text-dark"></i></a></div>
+				<div class="col"><a href="add_activity.html"><i class="bi bi-plus-square fa-2x text-dark"></i></a></div>
+				<div class="col"><a href="settings.html"><i class="bi bi-gear fa-2x text-dark"></i></a></div>
+				<div class="col"><a href="user_profile.html"><i class="bi bi-person-circle fa-2x text-dark"></i></a></div> 
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
+
+	<!-- Logo -->
+	<div class="container">
+		<div class="title text-center mt-0 mb-0">
+			<i class="bi bi-bicycle fa-3x"></i>
+		</div>
+	</div>
+
+	<!-- horizontal line -->
+	<div class="container">
+		<hr class="line-primary w-100 mt-0 mb-0">
+	</div>
+	
+	<br>
+	
+
+	
+	
+
+		<!-- Close Friends section-->
+		<div class="container">
+			<div class = "row">
+				<div class="col d-flex flex-column justify-content-center align-items-center ">
+						<img src="https://i.redd.it/yyehic4xdzi61.jpg"  style="border-radius: 50%; border: 2px solid #e14eca; max-width: 10em; max-height: 10em;">
+						<h2 class="pl-3 mt-1 mb-0" style="color: violet;"><strong>Mikey</strong></h2>
+                        <p>"I also like to ride bikes"</p>
+                        <div class="d-flex mt-0 ml-2">
+                            <a href="user_profile.html"><i class="bi bi-instagram fa-2x text-white mr-2"></i></a>
+                            <a href="user_profile.html"><i class="bi bi-facebook fa-2x text-white mr-2"></i></a>
+                            <a href="user_profile.html"><i class="bi bi-twitter fa-2x text-white mr-2"></i></a>
+                        </div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- horizontal line -->
+		<div class="container">
+			<hr class="line-primary w-100 mt-0 mb-0">
+		</div>
+		<br>
+
+		<!-- All Friends section -->
+		<div class="container d-flex flex-column" >		
+
+			<h3 class="mb-2" style="text-align: center; font-weight: 700;">Overview</h3>
+            <div class="d-flex justify-content-center mt-0" >
+                <span class="text-center" style="font-size: 25px; color: rgb(247, 237, 248);" onclick="searchBarDiv()" onkeyup="searchFunction()">
+                    <i class="fas fa-circle"></i>
+                </span>
+                <span class="text-center" style="font-size: 25px; color: rgb(247, 237, 248);" onclick="searchBarDiv()" onkeyup="searchFunction()">
+                    <i class="fas fa-circle-notch"></i>
+                </span>
+            </div>
+            
+			<div id="frameOne">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-2 mt-0" style="border: 3px solid #e14eca; border-radius: 25px;">
+                            <h4 style="text-align: center;"> Distance</h4>
+                            <span style="font-size: 48px; color: rgb(247, 237, 248);">
+                                <i class="fas fa-road"></i>
+                            </span>
+                            <h4>100km</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-2 mt-0" style="border: 3px solid #e14eca; border-radius: 25px;">
+                            <h4 style="text-align: center;">Total time</h4>
+                            <span style="font-size: 48px; color: rgb(247, 237, 248);">
+                                <i class="fas fa-clock"></i>
+                            </span>
+                            <h4>15 hours</h4>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-2 mt-0" style="border: 3px solid #e14eca; border-radius: 25px;">
+                            <h4 style="text-align: center;">Activities</h4>
+                            <span style="font-size: 48px; color: rgb(247, 237, 248);">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <h4>4 done</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+        <!--frame to hide-->
+        <div id="frameTwo" style="display:none;" onclick="normalDiv()">
+
+            <!-- horizontal line -->
+            <div class="container">
+            </div>
+            <br>
+            <div class="container">
+    
+                <div id="list">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div class="description">
+                                    <!--<div><h4 class="info-title text-left">KOPER</h4><i class="bi bi-chat-right-dots-fill"></i><i class="bi bi-person-circle"></i></div>
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col">
+                                            <h2>KOPER</h2>
+                                        </div>
+                                        <div class="col">
+                                          <i class="bi bi-chat-right-dots-fill"></i>
+                                        </div>
+                                        <div class="col">
+                                          <i class="bi bi-person-circle"></i>
+                                        </div>
+                                          <div class="col">
+                                          <i class="bi bi-image-alt fa-3x"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <hr class="line-primary w-75">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col">Column</div>
+                                        <div class="col">Column</div>
+                                        <div class="w-100"></div>
+                                        <div class="col">Column</div>
+                                        <div class="col">Column</div>
+                                      </div>
+                                    </div>-->        
+                                      <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <th colspan = "2"><h4 style = "color:#e14eca;">Velenje</h4></th>
+                                            <th></th>
+                                            <th><i class="bi bi-people-fill fa-2x" rel="tooltip" title="Key active"></i>20</th>
+                                            <th><i class="bi bi-chat-dots-fill fa-2x"></i>3</th>
+                                            <th rowspan="4"><i class="bi bi-tree-fill fa-3x"></i></th>
+                                          </tr>
+                                          <tr>
+                                              <td><i class="bi bi-compass-fill"></i></td>
+                                            <td>21KM</td>
+                                            <td><i class="bi bi-clock-fill"></i></td>
+                                            <td>6:00AM</td>
+                                          </tr>
+                                          <tr>
+                                            <td><i class="bi bi-calendar2-week-fill"></i></td>
+                                            <td>23.4</td>
+                                            <td><i class="bi bi-hourglass-split"></i></td>
+                                            <td>23min</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                            </button>
+                          </h2>
+                        </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">    
+                          <div class="card">
+
+                            <div class="card-body">
+                              <!-- Tab panes -->
+                              <div class="tab-content tab-space">
+                                <div class="tab-pane active" id="link1">
+                                                                    <table class="table">
+                                        <tbody>
+                                          <tr>
+                                              <td ><i class="bi bi-signpost" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></td>
+                                            <td colspan="3">Rdeči park, Koper</td>
+                                          </tr>
+                                            <tr>
+                                              <td ><i class="bi bi-signpost-fill"></i></td>
+                                            <td colspan="3">Maribor</td>
+                                          </tr>
+                                          <tr>
+                                            <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Difficulty of the track</span>
+                                            <div class="progress">
+                                              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                <span class="progress-value">90%</span>
+                                              </div>
+                                            </div>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    <hr class="line-primary w-75">
+                                </div>
+                                <div class="tab-pane" id="link2">
+                                  <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <th colspan = "4"><h4 style = "color:#e14eca;">ALSO THESE USERS WILL PARTICIPATE IN THIS ACTIVITY </h4></th>
+                                          </tr>
+                                          <tr>
+                                              <td><i class="bi bi-file-person"></i></td>
+                                            <td>Mat30</td>
+                                            <td><i class="bi bi-file-person"></i></td>
+                                            <td>Jessica</td>
+                                          </tr>
+                                          <tr>
+                                            <td><i class="bi bi-file-person"></i></td>
+                                            <td>Leo</td>
+                                            <td><i class="bi bi-file-person"></i></td>
+                                            <td>Josh</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    <hr class="line-primary w-75">
+                                </div>
+                                <div class="tab-pane" id="link3">
+                                  <p>Great! You have joined this activity. Remember to respect the covid laws in force and enjoy the trip. 
+                                    <br />
+                                    <hr class="line-primary w-75">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card-header">
+                              <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                                    <i class="bi bi-info-circle-fill fa-lg"></i>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                                    <i class="bi bi-people-fill fa-lg"></i>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
+                                    <i class="bi bi-chat-left-text-fill fa-lg"></i>
+                                  </a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link"  href="activity_profile.html" >
+                                      MORE
+                                    </a>
+                                </li>
+                              </ul>
+                            </div>  
+
+                          </div>
+                      </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div class="description">
+                                    <!--<div><h4 class="info-title text-left">KOPER</h4><i class="bi bi-chat-right-dots-fill"></i><i class="bi bi-person-circle"></i></div>
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col">
+                                            <h2>KOPER</h2>
+                                        </div>
+                                        <div class="col">
+                                          <i class="bi bi-chat-right-dots-fill"></i>
+                                        </div>
+                                        <div class="col">
+                                          <i class="bi bi-person-circle"></i>
+                                        </div>
+                                          <div class="col">
+                                          <i class="bi bi-image-alt fa-3x"></i>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <hr class="line-primary w-75">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col">Column</div>
+                                        <div class="col">Column</div>
+                                        <div class="w-100"></div>
+                                        <div class="col">Column</div>
+                                        <div class="col">Column</div>
+                                      </div>
+                                    </div>-->        
+                                      <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <th colspan = "2"><h4 style = "color:#e14eca;">UMAG</h4></th>
+                                            <th></th>
+                                            <th><i class="bi bi-people-fill fa-2x" rel="tooltip" title="Key active"></i>30</th>
+                                            <th><i class="bi bi-chat-dots-fill fa-2x"></i>5</th>
+                                            <th rowspan="4"><i class="bi bi-tree-fill fa-3x"></i></th>
+                                          </tr>
+                                          <tr>
+                                              <td><i class="bi bi-compass-fill"></i></td>
+                                            <td>1KM</td>
+                                            <td><i class="bi bi-clock-fill"></i></td>
+                                            <td>8:00AM</td>
+                                          </tr>
+                                          <tr>
+                                            <td><i class="bi bi-calendar2-week-fill"></i></td>
+                                            <td>25.4</td>
+                                            <td><i class="bi bi-hourglass-split"></i></td>
+                                            <td>80min</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                            </button>
+                          </h2>
+                        </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">    
+                          <div class="card">
+
+                            <div class="card-body">
+                              <!-- Tab panes -->
+                              <div class="tab-content tab-space">
+                                <div class="tab-pane active" id="link1">
+                                                                    <table class="table">
+                                        <tbody>
+                                          <tr>
+                                              <td ><i class="bi bi-signpost" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></td>
+                                            <td colspan="3">Zeleni park, Koper</td>
+                                          </tr>
+                                            <tr>
+                                              <td ><i class="bi bi-signpost-fill"></i></td>
+                                            <td colspan="3">Izola</td>
+                                          </tr>
+                                          <tr>
+                                            <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Difficulty of the track</span>
+                                            <div class="progress">
+                                              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                <span class="progress-value">70%</span>
+                                              </div>
+                                            </div>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    <hr class="line-primary w-75">
+                                </div>
+                                <div class="tab-pane" id="link2">
+                                  <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <th colspan = "4"><h4 style = "color:#e14eca;">ALSO THESE USERS WILL PARTICIPATE IN THIS ACTIVITY </h4></th>
+                                          </tr>
+                                          <tr>
+                                              <td><i class="bi bi-file-person"></i></td>
+                                            <td>Mat30</td>
+                                            <td><i class="bi bi-file-person"></i></td>
+                                            <td>Jessica</td>
+                                          </tr>
+                                          <tr>
+                                            <td><i class="bi bi-file-person"></i></td>
+                                            <td>Leo</td>
+                                            <td><i class="bi bi-file-person"></i></td>
+                                            <td>Josh</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    <hr class="line-primary w-75">
+                                </div>
+                                <div class="tab-pane" id="link3">
+                                  <p>Great! You have joined this activity. Remember to respect the covid laws in force and enjoy the trip. 
+                                    <br />
+                                    <hr class="line-primary w-75">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card-header">
+                              <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                                <li class="nav-item">
+                                  <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                                    <i class="bi bi-info-circle-fill fa-lg"></i>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                                    <i class="bi bi-people-fill fa-lg"></i>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="tab" href="#link3" role="tablist">
+                                    <i class="bi bi-chat-left-text-fill fa-lg"></i>
+                                  </a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link"  href="activity_profile.html" >
+                                      MORE
+                                    </a>
+                                </li>
+                              </ul>
+                            </div>  
+
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frameOne">
+
+        </div>
+
+
+	<!--Frame to appear -->
+	
+
+
+
+	<!--   Core JS Files   -->
+	<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+	<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+	<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+	<script src="./assets/js/plugins/bootstrap-switch.js"></script>
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+	<!-- Chart JS -->
+	<script src="./assets/js/plugins/chartjs.min.js"></script>
+	<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+	<script src="./assets/js/plugins/moment.min.js"></script>
+	<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+	<!-- Black Dashboard DEMO methods, don't include it in your project! -->
+	<script src="./assets/demo/demo.js"></script>
+	<!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+	<script src="./assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+    
+	<script>
+		$(document).ready(function() {
+			blackKit.initDatePicker();
+			blackKit.initSliders();
+		});
+
+		function scrollToDownload() {
+
+			if ($('.section-download').length != 0) {
+				$("html, body").animate({
+					scrollTop: $('.section-download').offset().top
+				}, 1000);
+			}
+		}
+
+		function searchBarDiv() { 
+			document.getElementById("frameOne").style.display="none"; 
+			document.getElementById("frameTwo").style.display="block"; 
+		}
+
+		function normalDiv() { 
+			document.getElementById("frameOne").style.display="block"; 
+			document.getElementById("frameTwo").style.display="none"; 
+		}
+		function searchFunction() {
+
+			var input, filter, list, table,td,i,txtValue;
+			input = document.getElementById("input");
+			filter = input.value.toUpperCase();
+			list = document.getElementById("list");
+			table = list.getElementsByTagName("table");
+			for(i=0; i< table.length; i++){
+				td = table[i].getElementsByTagName("a")[0];
+				if(td){
+					txtValue = td.textContent || td.innerText;
+					if(txtValue.toUpperCase().indexOf(filter) > -1){
+						table[i].style.display = "";
+					} else {
+						table[i].style.display = "none";
+					}
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>
