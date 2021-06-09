@@ -6,6 +6,7 @@ Front end is written in HTML code with CSS(Bootstrap) and JS.
 
 Pages are made static and there are some other limitations as well.
 Due to lack of time, forms are not working because there is no backend to store the data. Also settings doesnt affect the behaviour of application.
+The app also doesn't have login and register form and terms of service.
 
 Links to project:
 Youtube: https://youtu.be/Q_ei-LMuWUk
